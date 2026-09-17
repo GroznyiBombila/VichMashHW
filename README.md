@@ -40,10 +40,10 @@
 ## Состав
 
 ```
-esp32cam_ascii_bot/esp32cam_ascii_bot.ino   основной скетч
-esp32cam_diag_web/esp32cam_diag_web.ino     диагностика пайки через веб-страницу
-vps/                                        перенаправитель Telegram на сервере
-Results/                                    результаты работы
+code/esp32cam_ascii_bot/esp32cam_ascii_bot.ino   основной скетч
+code/esp32cam_diag_web/esp32cam_diag_web.ino     диагностика пайки через веб-страницу
+code/vps/                                        перенаправитель Telegram на сервере
+Results/                                         результаты работы
 ```
 
 ---
@@ -86,4 +86,4 @@ Results/                                    результаты работы
 
 Если сеть не пускает к `api.telegram.org`, плата шлёт обычный HTTP на свой
 сервер, а nginx в контейнере пересылает запрос в Telegram по HTTPS.
-Развернуть: `bash vps/push.sh`.
+Развернуть: `bash code/vps/push.sh`.
