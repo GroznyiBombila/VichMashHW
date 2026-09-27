@@ -9,7 +9,7 @@
 ## Результаты работы
 
 Снимки с камеры, которые плата отправила в Telegram:
-**[папка Results](Results/)**
+**[папка Results](homework1/Results/)**
 
 Что получилось:
 
@@ -40,10 +40,10 @@
 ## Состав
 
 ```
-code/esp32cam_ascii_bot/esp32cam_ascii_bot.ino   основной скетч
-code/esp32cam_diag_web/esp32cam_diag_web.ino     диагностика пайки через веб-страницу
-code/vps/                                        перенаправитель Telegram на сервере
-Results/                                         результаты работы
+homework1/code/esp32cam_ascii_bot/esp32cam_ascii_bot.ino   основной скетч
+homework1/code/esp32cam_diag_web/esp32cam_diag_web.ino     диагностика пайки через веб-страницу
+homework1/code/vps/                                        перенаправитель Telegram на сервере
+homework1/Results/                                         результаты работы
 ```
 
 ---
@@ -86,4 +86,12 @@ Results/                                         результаты работ
 
 Если сеть не пускает к `api.telegram.org`, плата шлёт обычный HTTP на свой
 сервер, а nginx в контейнере пересылает запрос в Telegram по HTTPS.
-Развернуть: `bash code/vps/push.sh`.
+Развернуть: `bash homework1/code/vps/push.sh`.
+
+---
+
+## Домашнее задание 2: одна программа, три процессора
+
+Один скетч прошит в Arduino Nano, ЙоТик-32 и ESP32-CAM и измеряет, сколько
+тактов уходит на операции, вызовы функций и чтение разных видов памяти.
+Описание, замеры и графики: **[папка homework2](homework2/)**
