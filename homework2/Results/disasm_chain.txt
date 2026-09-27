@@ -1,0 +1,31 @@
+Одна и та же функция chain() из bench.ino, скомпилированная под два процессора.
+Исходник:  int32_t chain(int depth) { if (depth == 0) return 0; int32_t r = chain(depth - 1); sinkInt = r; return r + 1; }
+
+===== Arduino Nano, ATmega328P (AVR, 8 бит) =====
+00000894 <chain(int)>:
+     894:	00 97       	sbiw	r24, 0x00	; 0
+     896:	81 f0       	breq	.+32     	; 0x8b8 <chain(int)+0x24>
+     898:	01 97       	sbiw	r24, 0x01	; 1
+     89a:	0e 94 4a 04 	call	0x894	; 0x894 <chain(int)>
+     89e:	60 93 8b 05 	sts	0x058B, r22	; 0x80058b <sinkInt>
+     8a2:	70 93 8c 05 	sts	0x058C, r23	; 0x80058c <sinkInt+0x1>
+     8a6:	80 93 8d 05 	sts	0x058D, r24	; 0x80058d <sinkInt+0x2>
+     8aa:	90 93 8e 05 	sts	0x058E, r25	; 0x80058e <sinkInt+0x3>
+     8ae:	6f 5f       	subi	r22, 0xFF	; 255
+     8b0:	7f 4f       	sbci	r23, 0xFF	; 255
+     8b2:	8f 4f       	sbci	r24, 0xFF	; 255
+     8b4:	9f 4f       	sbci	r25, 0xFF	; 255
+     8b6:	08 95       	ret
+
+===== ESP32, Xtensa LX6 (32 бита) =====
+400d2a1c <chain(int)>:
+400d2a1c:	004136        	entry	a1, 32
+400d2a1f:	011216        	beqz	a2, 400d2a34 <chain(int)+0x18>
+400d2a22:	ffc2a2        	addi	a10, a2, -1
+400d2a25:	ffff65        	call8	400d2a1c <chain(int)>
+400d2a28:	f58681        	l32r	a8, 400d0040 <_stext+0x20> (3ffc39fc <sinkInt>)
+400d2a2b:	01ca22        	addi	a2, a10, 1
+400d2a2e:	0020c0        	memw
+400d2a31:	0068a2        	s32i	a10, a8, 0
+400d2a34:	0020c0        	memw
+400d2a37:	f01d      	retw.n
