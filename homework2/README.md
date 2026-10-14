@@ -26,12 +26,16 @@
 
 ### Тесты
 
+Разбор одного теста, 1 + 1 = 2: какой рычажок за что отвечает и какие светодиоды горят.
+
+<img src="Results/test2_explained.jpg" width="60%">
+
 ![Тесты](Results/tests.jpg)
 
 | № | A | B | Cin | сумма | светодиоды Cout S3 S2 S1 S0 | фото |
 |---|---|---|---|---|---|---|
 | 1 | 0000 (0) | 0010 (2) | 0 | 2 | 0 0010 | [test1](Results/test1.jpg) |
-| 2 | 0001 (1) | 0001 (1) | 0 | 2 | 0 0010 | [test2](Results/test2.jpg) |
+| 2 | 0001 (1) | 0001 (1) | 0 | 2 | 0 0010 | [test2](Results/test2.jpg), [крупно](Results/test2_close.jpg) |
 | 3 | 1000 (8) | 0010 (2) | 0 | 10 | 0 1010 | [test3](Results/test3.jpg) |
 | 4 | 0100 (4) | 0110 (6) | 0 | 10 | 0 1010 | [test4](Results/test4.jpg) |
 | 5 | 1000 (8) | 1010 (10) | 0 | 18 | 1 0010 | [test5](Results/test5.jpg) |
