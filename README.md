@@ -57,6 +57,33 @@
 
 ---
 
+## Сборка и пайка
+
+Все пять плат с компонентами, до соединения кабелями:
+
+![Платы сверху](homework2/Results/assembly/boards_top.jpg)
+
+Плата ввода-вывода: сверху на этапе монтажа и снизу, готовая разводка.
+
+<p>
+<img src="homework2/Results/assembly/io_board_top.jpg" width="49%"> <img src="homework2/Results/assembly/io_board_bottom.jpg" width="49%">
+</p>
+
+Плата разряда снизу: шина +5 В сверху, шина GND снизу, между ними перемычки
+между ячейками и провода к разъёму.
+
+<p>
+<img src="homework2/Results/assembly/bit_board_bottom.jpg" width="56%"> <img src="homework2/Results/assembly/bit_board_bottom_2.jpg" width="41%">
+</p>
+
+Низ плат разряда и система в сборе, соединённая кабелями:
+
+<p>
+<img src="homework2/Results/assembly/boards_bottom.jpg" width="40%"> <img src="homework2/Results/assembly/system_wired.jpg" width="57%">
+</p>
+
+---
+
 ## Как это работает
 
 - **Вентиль И-НЕ**: два n-МОП транзистора последовательно и резистор 10 кОм к +5 В.
