@@ -1,0 +1,462 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1580 1010" width="1580" height="1010" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1580" height="1010" fill="#ffffff"/>
+<text x="24.0" y="34.0" font-size="20" fill="#263238" text-anchor="start" font-weight="bold" >Плата разряда изнутри: все 9 ячеек и все соединения линиями</text>
+<text x="24.0" y="58.0" font-size="13" fill="#546e7a" text-anchor="start" font-weight="normal" >Каждая ячейка — вентиль И-НЕ: резистор сверху, под ним два транзистора друг под другом. Цветная линия — провод; одинаковый цвет = одна цепь.</text>
+<text x="170.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 1</text>
+<text x="170.0" y="128.0" font-size="12" fill="#00897b" text-anchor="middle" font-weight="bold" >N1 = И-НЕ(A, B)</text>
+<line x1="180.0" y1="150.0" x2="180.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="172" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="172" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="172" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="172" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="172" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="167.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R1</text>
+<text x="167.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M185,287 C140,287 140,355 185,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="185.0" y1="287.0" x2="185.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="180" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="167.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="180" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="167.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="180" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="167.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="190.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q1</text>
+<line x1="180.0" y1="346.0" x2="180.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M185,367 C140,367 140,435 185,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="185.0" y1="367.0" x2="185.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="180" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="167.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="180" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="167.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="180" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="167.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="190.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q2</text>
+<line x1="180.0" y1="426.0" x2="180.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="320.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 2</text>
+<text x="320.0" y="128.0" font-size="12" fill="#6d4c41" text-anchor="middle" font-weight="bold" >N2 = И-НЕ(A, N1)</text>
+<line x1="330.0" y1="150.0" x2="330.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="322" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="322" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="322" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="322" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="322" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="317.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R2</text>
+<text x="317.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M335,287 C290,287 290,355 335,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="335.0" y1="287.0" x2="335.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="330" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="317.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="330" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="317.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="330" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="317.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="340.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q3</text>
+<line x1="330.0" y1="346.0" x2="330.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M335,367 C290,367 290,435 335,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="335.0" y1="367.0" x2="335.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="330" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="317.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="330" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="317.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="330" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="317.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="340.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q4</text>
+<line x1="330.0" y1="426.0" x2="330.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="470.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 3</text>
+<text x="470.0" y="128.0" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold" >N3 = И-НЕ(B, N1)</text>
+<line x1="480.0" y1="150.0" x2="480.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="472" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="472" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="472" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="472" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="472" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="467.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R3</text>
+<text x="467.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M485,287 C440,287 440,355 485,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="485.0" y1="287.0" x2="485.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="480" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="467.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="480" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="467.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="480" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="467.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="490.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q5</text>
+<line x1="480.0" y1="346.0" x2="480.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M485,367 C440,367 440,435 485,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="485.0" y1="367.0" x2="485.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="480" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="467.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="480" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="467.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="480" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="467.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="490.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q6</text>
+<line x1="480.0" y1="426.0" x2="480.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="620.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 4</text>
+<text x="620.0" y="128.0" font-size="12" fill="#0288d1" text-anchor="middle" font-weight="bold" >N4 = И-НЕ(N2, N3)</text>
+<line x1="630.0" y1="150.0" x2="630.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="622" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="622" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="622" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="622" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="622" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="617.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R4</text>
+<text x="617.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M635,287 C590,287 590,355 635,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="635.0" y1="287.0" x2="635.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="630" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="617.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="630" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="617.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="630" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="617.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="640.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q7</text>
+<line x1="630.0" y1="346.0" x2="630.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M635,367 C590,367 590,435 635,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="635.0" y1="367.0" x2="635.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="630" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="617.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="630" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="617.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="630" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="617.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="640.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q8</text>
+<line x1="630.0" y1="426.0" x2="630.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="770.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 5</text>
+<text x="770.0" y="128.0" font-size="12" fill="#9e9d24" text-anchor="middle" font-weight="bold" >N5 = И-НЕ(N4, Cin)</text>
+<line x1="780.0" y1="150.0" x2="780.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="772" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="772" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="772" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="772" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="772" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="767.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R5</text>
+<text x="767.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M785,287 C740,287 740,355 785,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="785.0" y1="287.0" x2="785.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="780" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="767.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="780" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="767.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="780" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="767.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="790.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q9</text>
+<line x1="780.0" y1="346.0" x2="780.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M785,367 C740,367 740,435 785,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="785.0" y1="367.0" x2="785.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="780" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="767.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="780" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="767.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="780" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="767.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="790.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q10</text>
+<line x1="780.0" y1="426.0" x2="780.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="920.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 6</text>
+<text x="920.0" y="128.0" font-size="12" fill="#5e35b1" text-anchor="middle" font-weight="bold" >N6 = И-НЕ(N4, N5)</text>
+<line x1="930.0" y1="150.0" x2="930.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="922" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="922" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="922" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="922" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="922" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="917.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R6</text>
+<text x="917.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M935,287 C890,287 890,355 935,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="935.0" y1="287.0" x2="935.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="930" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="917.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="930" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="917.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="930" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="917.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="940.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q11</text>
+<line x1="930.0" y1="346.0" x2="930.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M935,367 C890,367 890,435 935,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="935.0" y1="367.0" x2="935.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="930" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="917.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="930" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="917.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="930" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="917.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="940.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q12</text>
+<line x1="930.0" y1="426.0" x2="930.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="1070.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 7</text>
+<text x="1070.0" y="128.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >N7 = И-НЕ(Cin, N5)</text>
+<line x1="1080.0" y1="150.0" x2="1080.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="1072" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="1072" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="1072" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="1072" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="1072" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="1067.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R7</text>
+<text x="1067.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M1085,287 C1040,287 1040,355 1085,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="1085.0" y1="287.0" x2="1085.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="1080" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="1067.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="1080" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="1067.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="1080" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="1067.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="1090.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q13</text>
+<line x1="1080.0" y1="346.0" x2="1080.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M1085,367 C1040,367 1040,435 1085,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="1085.0" y1="367.0" x2="1085.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="1080" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="1067.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="1080" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="1067.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="1080" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="1067.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="1090.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q14</text>
+<line x1="1080.0" y1="426.0" x2="1080.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="1220.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 8</text>
+<text x="1220.0" y="128.0" font-size="12" fill="#8e24aa" text-anchor="middle" font-weight="bold" >S = И-НЕ(N6, N7)</text>
+<line x1="1230.0" y1="150.0" x2="1230.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="1222" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="1222" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="1222" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="1222" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="1222" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="1217.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R8</text>
+<text x="1217.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M1235,287 C1190,287 1190,355 1235,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="1235.0" y1="287.0" x2="1235.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="1230" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="1217.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="1230" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="1217.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="1230" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="1217.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="1240.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q15</text>
+<line x1="1230.0" y1="346.0" x2="1230.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M1235,367 C1190,367 1190,435 1235,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="1235.0" y1="367.0" x2="1235.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="1230" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="1217.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="1230" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="1217.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="1230" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="1217.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="1240.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q16</text>
+<line x1="1230.0" y1="426.0" x2="1230.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="1370.0" y="110.0" font-size="12" fill="#546e7a" text-anchor="middle" font-weight="bold" >ячейка 9</text>
+<text x="1370.0" y="128.0" font-size="12" fill="#ef6c00" text-anchor="middle" font-weight="bold" >Cout = И-НЕ(N1, N5)</text>
+<line x1="1380.0" y1="150.0" x2="1380.0" y2="262.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="1372" y="172.4" width="16" height="67.2" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="1372" y="181.8" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="1372" y="194.6" width="16" height="3.5" fill="#212121"/>
+<rect x="1372" y="207.3" width="16" height="3.5" fill="#f57c00"/>
+<rect x="1372" y="226.8" width="16" height="3.5" fill="#c9a227"/>
+<text x="1367.0" y="204.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">R9</text>
+<text x="1367.0" y="217.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke">10 кОм</text>
+<path d="M1385,287 C1340,287 1340,355 1385,355 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="1385.0" y1="287.0" x2="1385.0" y2="355.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="1380" cy="296" r="3.5" fill="#cfd8dc"/>
+<text x="1367.0" y="300.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="1380" cy="321" r="3.5" fill="#cfd8dc"/>
+<text x="1367.0" y="325.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="1380" cy="346" r="3.5" fill="#cfd8dc"/>
+<text x="1367.0" y="350.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="1390.0" y="300.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q17</text>
+<line x1="1380.0" y1="346.0" x2="1380.0" y2="376.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<path d="M1385,367 C1340,367 1340,435 1385,435 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="1385.0" y1="367.0" x2="1385.0" y2="435.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="1380" cy="376" r="3.5" fill="#cfd8dc"/>
+<text x="1367.0" y="380.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="1380" cy="401" r="3.5" fill="#cfd8dc"/>
+<text x="1367.0" y="405.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="1380" cy="426" r="3.5" fill="#cfd8dc"/>
+<text x="1367.0" y="430.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="1390.0" y="380.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Q18</text>
+<line x1="1380.0" y1="426.0" x2="1380.0" y2="470.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<text x="1456.0" y="154.0" font-size="13" fill="#d32f2f" text-anchor="start" font-weight="bold" >+5V</text>
+<text x="1456.0" y="474.0" font-size="13" fill="#263238" text-anchor="start" font-weight="bold" >GND</text>
+<line x1="128.0" y1="272.0" x2="180.0" y2="272.0" stroke="#00897b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="180.0" y1="321.0" x2="242.0" y2="321.0" stroke="#1565c0" stroke-width="2.6" stroke-linecap="round" />
+<line x1="180.0" y1="401.0" x2="212.0" y2="401.0" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round" />
+<line x1="278.0" y1="272.0" x2="330.0" y2="272.0" stroke="#6d4c41" stroke-width="2.6" stroke-linecap="round" />
+<line x1="330.0" y1="321.0" x2="392.0" y2="321.0" stroke="#1565c0" stroke-width="2.6" stroke-linecap="round" />
+<line x1="330.0" y1="401.0" x2="362.0" y2="401.0" stroke="#00897b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="428.0" y1="272.0" x2="480.0" y2="272.0" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="480.0" y1="321.0" x2="542.0" y2="321.0" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round" />
+<line x1="480.0" y1="401.0" x2="512.0" y2="401.0" stroke="#00897b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="578.0" y1="272.0" x2="630.0" y2="272.0" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="630.0" y1="321.0" x2="692.0" y2="321.0" stroke="#6d4c41" stroke-width="2.6" stroke-linecap="round" />
+<line x1="630.0" y1="401.0" x2="662.0" y2="401.0" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="728.0" y1="272.0" x2="780.0" y2="272.0" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round" />
+<line x1="780.0" y1="321.0" x2="842.0" y2="321.0" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="780.0" y1="401.0" x2="812.0" y2="401.0" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round" />
+<line x1="878.0" y1="272.0" x2="930.0" y2="272.0" stroke="#5e35b1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="930.0" y1="321.0" x2="992.0" y2="321.0" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="930.0" y1="401.0" x2="962.0" y2="401.0" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1028.0" y1="272.0" x2="1080.0" y2="272.0" stroke="#546e7a" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1080.0" y1="321.0" x2="1142.0" y2="321.0" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1080.0" y1="401.0" x2="1112.0" y2="401.0" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1178.0" y1="272.0" x2="1230.0" y2="272.0" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1230.0" y1="321.0" x2="1292.0" y2="321.0" stroke="#5e35b1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1230.0" y1="401.0" x2="1262.0" y2="401.0" stroke="#546e7a" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1328.0" y1="272.0" x2="1380.0" y2="272.0" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1380.0" y1="321.0" x2="1442.0" y2="321.0" stroke="#00897b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1380.0" y1="401.0" x2="1412.0" y2="401.0" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round" />
+<line x1="128.0" y1="510.0" x2="1442.0" y2="510.0" stroke="#00897b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="212.0" y1="530.0" x2="804.0" y2="530.0" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round" />
+<line x1="242.0" y1="550.0" x2="758.0" y2="550.0" stroke="#1565c0" stroke-width="2.6" stroke-linecap="round" />
+<line x1="278.0" y1="570.0" x2="692.0" y2="570.0" stroke="#6d4c41" stroke-width="2.6" stroke-linecap="round" />
+<line x1="428.0" y1="590.0" x2="662.0" y2="590.0" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round" />
+<line x1="578.0" y1="610.0" x2="992.0" y2="610.0" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="728.0" y1="570.0" x2="1412.0" y2="570.0" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round" />
+<line x1="812.0" y1="550.0" x2="1142.0" y2="550.0" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round" />
+<line x1="878.0" y1="530.0" x2="1292.0" y2="530.0" stroke="#5e35b1" stroke-width="2.6" stroke-linecap="round" />
+<line x1="896.0" y1="590.0" x2="1178.0" y2="590.0" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round" />
+<line x1="942.0" y1="630.0" x2="1328.0" y2="630.0" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round" />
+<line x1="1028.0" y1="610.0" x2="1262.0" y2="610.0" stroke="#546e7a" stroke-width="2.6" stroke-linecap="round" />
+<line x1="40.0" y1="690.0" x2="666.0" y2="690.0" stroke="#d32f2f" stroke-width="3.5" stroke-linecap="round" />
+<line x1="40.0" y1="150.0" x2="1450.0" y2="150.0" stroke="#d32f2f" stroke-width="4" stroke-linecap="round" />
+<line x1="60.0" y1="470.0" x2="1450.0" y2="470.0" stroke="#263238" stroke-width="4" stroke-linecap="round" />
+<path d="M180.0,262.0 L180.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M180.0,262.0 L180.0,296.0" fill="none" stroke="#00897b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M330.0,262.0 L330.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M330.0,262.0 L330.0,296.0" fill="none" stroke="#6d4c41" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M480.0,262.0 L480.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M480.0,262.0 L480.0,296.0" fill="none" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M630.0,262.0 L630.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M630.0,262.0 L630.0,296.0" fill="none" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M780.0,262.0 L780.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M780.0,262.0 L780.0,296.0" fill="none" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M930.0,262.0 L930.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M930.0,262.0 L930.0,296.0" fill="none" stroke="#5e35b1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1080.0,262.0 L1080.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1080.0,262.0 L1080.0,296.0" fill="none" stroke="#546e7a" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1230.0,262.0 L1230.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1230.0,262.0 L1230.0,296.0" fill="none" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1380.0,262.0 L1380.0,296.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1380.0,262.0 L1380.0,296.0" fill="none" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M128.0,272.0 L128.0,464.0 A6,6 0 0 1 128.0,476.0 L128.0,510.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M128.0,272.0 L128.0,464.0 A6,6 0 0 1 128.0,476.0 L128.0,510.0" fill="none" stroke="#00897b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M362.0,401.0 L362.0,464.0 A6,6 0 0 1 362.0,476.0 L362.0,510.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M362.0,401.0 L362.0,464.0 A6,6 0 0 1 362.0,476.0 L362.0,510.0" fill="none" stroke="#00897b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M512.0,401.0 L512.0,464.0 A6,6 0 0 1 512.0,476.0 L512.0,510.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M512.0,401.0 L512.0,464.0 A6,6 0 0 1 512.0,476.0 L512.0,510.0" fill="none" stroke="#00897b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1442.0,321.0 L1442.0,464.0 A6,6 0 0 1 1442.0,476.0 L1442.0,510.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1442.0,321.0 L1442.0,464.0 A6,6 0 0 1 1442.0,476.0 L1442.0,510.0" fill="none" stroke="#00897b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M212.0,401.0 L212.0,464.0 A6,6 0 0 1 212.0,476.0 L212.0,504.0 A6,6 0 0 1 212.0,516.0 L212.0,530.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M212.0,401.0 L212.0,464.0 A6,6 0 0 1 212.0,476.0 L212.0,504.0 A6,6 0 0 1 212.0,516.0 L212.0,530.0" fill="none" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M542.0,321.0 L542.0,464.0 A6,6 0 0 1 542.0,476.0 L542.0,504.0 A6,6 0 0 1 542.0,516.0 L542.0,530.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M542.0,321.0 L542.0,464.0 A6,6 0 0 1 542.0,476.0 L542.0,504.0 A6,6 0 0 1 542.0,516.0 L542.0,530.0" fill="none" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M804.0,530.0 L804.0,564.0 A6,6 0 0 1 804.0,576.0 L804.0,604.0 A6,6 0 0 1 804.0,616.0 L804.0,690.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M804.0,530.0 L804.0,564.0 A6,6 0 0 1 804.0,576.0 L804.0,604.0 A6,6 0 0 1 804.0,616.0 L804.0,690.0" fill="none" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M242.0,321.0 L242.0,464.0 A6,6 0 0 1 242.0,476.0 L242.0,504.0 A6,6 0 0 1 242.0,516.0 L242.0,524.0 A6,6 0 0 1 242.0,536.0 L242.0,550.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M242.0,321.0 L242.0,464.0 A6,6 0 0 1 242.0,476.0 L242.0,504.0 A6,6 0 0 1 242.0,516.0 L242.0,524.0 A6,6 0 0 1 242.0,536.0 L242.0,550.0" fill="none" stroke="#1565c0" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M392.0,321.0 L392.0,464.0 A6,6 0 0 1 392.0,476.0 L392.0,504.0 A6,6 0 0 1 392.0,516.0 L392.0,524.0 A6,6 0 0 1 392.0,536.0 L392.0,550.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M392.0,321.0 L392.0,464.0 A6,6 0 0 1 392.0,476.0 L392.0,504.0 A6,6 0 0 1 392.0,516.0 L392.0,524.0 A6,6 0 0 1 392.0,536.0 L392.0,550.0" fill="none" stroke="#1565c0" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M758.0,550.0 L758.0,564.0 A6,6 0 0 1 758.0,576.0 L758.0,604.0 A6,6 0 0 1 758.0,616.0 L758.0,690.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M758.0,550.0 L758.0,564.0 A6,6 0 0 1 758.0,576.0 L758.0,604.0 A6,6 0 0 1 758.0,616.0 L758.0,690.0" fill="none" stroke="#1565c0" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M278.0,272.0 L278.0,464.0 A6,6 0 0 1 278.0,476.0 L278.0,504.0 A6,6 0 0 1 278.0,516.0 L278.0,524.0 A6,6 0 0 1 278.0,536.0 L278.0,544.0 A6,6 0 0 1 278.0,556.0 L278.0,570.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M278.0,272.0 L278.0,464.0 A6,6 0 0 1 278.0,476.0 L278.0,504.0 A6,6 0 0 1 278.0,516.0 L278.0,524.0 A6,6 0 0 1 278.0,536.0 L278.0,544.0 A6,6 0 0 1 278.0,556.0 L278.0,570.0" fill="none" stroke="#6d4c41" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M692.0,321.0 L692.0,464.0 A6,6 0 0 1 692.0,476.0 L692.0,504.0 A6,6 0 0 1 692.0,516.0 L692.0,524.0 A6,6 0 0 1 692.0,536.0 L692.0,544.0 A6,6 0 0 1 692.0,556.0 L692.0,570.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M692.0,321.0 L692.0,464.0 A6,6 0 0 1 692.0,476.0 L692.0,504.0 A6,6 0 0 1 692.0,516.0 L692.0,524.0 A6,6 0 0 1 692.0,536.0 L692.0,544.0 A6,6 0 0 1 692.0,556.0 L692.0,570.0" fill="none" stroke="#6d4c41" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M428.0,272.0 L428.0,464.0 A6,6 0 0 1 428.0,476.0 L428.0,504.0 A6,6 0 0 1 428.0,516.0 L428.0,524.0 A6,6 0 0 1 428.0,536.0 L428.0,544.0 A6,6 0 0 1 428.0,556.0 L428.0,564.0 A6,6 0 0 1 428.0,576.0 L428.0,590.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M428.0,272.0 L428.0,464.0 A6,6 0 0 1 428.0,476.0 L428.0,504.0 A6,6 0 0 1 428.0,516.0 L428.0,524.0 A6,6 0 0 1 428.0,536.0 L428.0,544.0 A6,6 0 0 1 428.0,556.0 L428.0,564.0 A6,6 0 0 1 428.0,576.0 L428.0,590.0" fill="none" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M662.0,401.0 L662.0,464.0 A6,6 0 0 1 662.0,476.0 L662.0,504.0 A6,6 0 0 1 662.0,516.0 L662.0,524.0 A6,6 0 0 1 662.0,536.0 L662.0,544.0 A6,6 0 0 1 662.0,556.0 L662.0,564.0 A6,6 0 0 1 662.0,576.0 L662.0,590.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M662.0,401.0 L662.0,464.0 A6,6 0 0 1 662.0,476.0 L662.0,504.0 A6,6 0 0 1 662.0,516.0 L662.0,524.0 A6,6 0 0 1 662.0,536.0 L662.0,544.0 A6,6 0 0 1 662.0,556.0 L662.0,564.0 A6,6 0 0 1 662.0,576.0 L662.0,590.0" fill="none" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M578.0,272.0 L578.0,464.0 A6,6 0 0 1 578.0,476.0 L578.0,504.0 A6,6 0 0 1 578.0,516.0 L578.0,524.0 A6,6 0 0 1 578.0,536.0 L578.0,544.0 A6,6 0 0 1 578.0,556.0 L578.0,564.0 A6,6 0 0 1 578.0,576.0 L578.0,584.0 A6,6 0 0 1 578.0,596.0 L578.0,610.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M578.0,272.0 L578.0,464.0 A6,6 0 0 1 578.0,476.0 L578.0,504.0 A6,6 0 0 1 578.0,516.0 L578.0,524.0 A6,6 0 0 1 578.0,536.0 L578.0,544.0 A6,6 0 0 1 578.0,556.0 L578.0,564.0 A6,6 0 0 1 578.0,576.0 L578.0,584.0 A6,6 0 0 1 578.0,596.0 L578.0,610.0" fill="none" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M842.0,321.0 L842.0,464.0 A6,6 0 0 1 842.0,476.0 L842.0,504.0 A6,6 0 0 1 842.0,516.0 L842.0,544.0 A6,6 0 0 1 842.0,556.0 L842.0,564.0 A6,6 0 0 1 842.0,576.0 L842.0,610.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M842.0,321.0 L842.0,464.0 A6,6 0 0 1 842.0,476.0 L842.0,504.0 A6,6 0 0 1 842.0,516.0 L842.0,544.0 A6,6 0 0 1 842.0,556.0 L842.0,564.0 A6,6 0 0 1 842.0,576.0 L842.0,610.0" fill="none" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M992.0,321.0 L992.0,464.0 A6,6 0 0 1 992.0,476.0 L992.0,504.0 A6,6 0 0 1 992.0,516.0 L992.0,524.0 A6,6 0 0 1 992.0,536.0 L992.0,544.0 A6,6 0 0 1 992.0,556.0 L992.0,564.0 A6,6 0 0 1 992.0,576.0 L992.0,584.0 A6,6 0 0 1 992.0,596.0 L992.0,610.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M992.0,321.0 L992.0,464.0 A6,6 0 0 1 992.0,476.0 L992.0,504.0 A6,6 0 0 1 992.0,516.0 L992.0,524.0 A6,6 0 0 1 992.0,536.0 L992.0,544.0 A6,6 0 0 1 992.0,556.0 L992.0,564.0 A6,6 0 0 1 992.0,576.0 L992.0,584.0 A6,6 0 0 1 992.0,596.0 L992.0,610.0" fill="none" stroke="#0288d1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M728.0,272.0 L728.0,464.0 A6,6 0 0 1 728.0,476.0 L728.0,504.0 A6,6 0 0 1 728.0,516.0 L728.0,524.0 A6,6 0 0 1 728.0,536.0 L728.0,544.0 A6,6 0 0 1 728.0,556.0 L728.0,570.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M728.0,272.0 L728.0,464.0 A6,6 0 0 1 728.0,476.0 L728.0,504.0 A6,6 0 0 1 728.0,516.0 L728.0,524.0 A6,6 0 0 1 728.0,536.0 L728.0,544.0 A6,6 0 0 1 728.0,556.0 L728.0,570.0" fill="none" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M962.0,401.0 L962.0,464.0 A6,6 0 0 1 962.0,476.0 L962.0,504.0 A6,6 0 0 1 962.0,516.0 L962.0,524.0 A6,6 0 0 1 962.0,536.0 L962.0,544.0 A6,6 0 0 1 962.0,556.0 L962.0,570.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M962.0,401.0 L962.0,464.0 A6,6 0 0 1 962.0,476.0 L962.0,504.0 A6,6 0 0 1 962.0,516.0 L962.0,524.0 A6,6 0 0 1 962.0,536.0 L962.0,544.0 A6,6 0 0 1 962.0,556.0 L962.0,570.0" fill="none" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1112.0,401.0 L1112.0,464.0 A6,6 0 0 1 1112.0,476.0 L1112.0,504.0 A6,6 0 0 1 1112.0,516.0 L1112.0,524.0 A6,6 0 0 1 1112.0,536.0 L1112.0,544.0 A6,6 0 0 1 1112.0,556.0 L1112.0,570.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1112.0,401.0 L1112.0,464.0 A6,6 0 0 1 1112.0,476.0 L1112.0,504.0 A6,6 0 0 1 1112.0,516.0 L1112.0,524.0 A6,6 0 0 1 1112.0,536.0 L1112.0,544.0 A6,6 0 0 1 1112.0,556.0 L1112.0,570.0" fill="none" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1412.0,401.0 L1412.0,464.0 A6,6 0 0 1 1412.0,476.0 L1412.0,504.0 A6,6 0 0 1 1412.0,516.0 L1412.0,570.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1412.0,401.0 L1412.0,464.0 A6,6 0 0 1 1412.0,476.0 L1412.0,504.0 A6,6 0 0 1 1412.0,516.0 L1412.0,570.0" fill="none" stroke="#9e9d24" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M812.0,401.0 L812.0,464.0 A6,6 0 0 1 812.0,476.0 L812.0,504.0 A6,6 0 0 1 812.0,516.0 L812.0,550.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M812.0,401.0 L812.0,464.0 A6,6 0 0 1 812.0,476.0 L812.0,504.0 A6,6 0 0 1 812.0,516.0 L812.0,550.0" fill="none" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1142.0,321.0 L1142.0,464.0 A6,6 0 0 1 1142.0,476.0 L1142.0,504.0 A6,6 0 0 1 1142.0,516.0 L1142.0,524.0 A6,6 0 0 1 1142.0,536.0 L1142.0,550.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1142.0,321.0 L1142.0,464.0 A6,6 0 0 1 1142.0,476.0 L1142.0,504.0 A6,6 0 0 1 1142.0,516.0 L1142.0,524.0 A6,6 0 0 1 1142.0,536.0 L1142.0,550.0" fill="none" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M850.0,550.0 L850.0,564.0 A6,6 0 0 1 850.0,576.0 L850.0,604.0 A6,6 0 0 1 850.0,616.0 L850.0,690.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M850.0,550.0 L850.0,564.0 A6,6 0 0 1 850.0,576.0 L850.0,604.0 A6,6 0 0 1 850.0,616.0 L850.0,690.0" fill="none" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M878.0,272.0 L878.0,464.0 A6,6 0 0 1 878.0,476.0 L878.0,504.0 A6,6 0 0 1 878.0,516.0 L878.0,530.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M878.0,272.0 L878.0,464.0 A6,6 0 0 1 878.0,476.0 L878.0,504.0 A6,6 0 0 1 878.0,516.0 L878.0,530.0" fill="none" stroke="#5e35b1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1292.0,321.0 L1292.0,464.0 A6,6 0 0 1 1292.0,476.0 L1292.0,504.0 A6,6 0 0 1 1292.0,516.0 L1292.0,530.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1292.0,321.0 L1292.0,464.0 A6,6 0 0 1 1292.0,476.0 L1292.0,504.0 A6,6 0 0 1 1292.0,516.0 L1292.0,530.0" fill="none" stroke="#5e35b1" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1178.0,272.0 L1178.0,464.0 A6,6 0 0 1 1178.0,476.0 L1178.0,504.0 A6,6 0 0 1 1178.0,516.0 L1178.0,524.0 A6,6 0 0 1 1178.0,536.0 L1178.0,564.0 A6,6 0 0 1 1178.0,576.0 L1178.0,590.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1178.0,272.0 L1178.0,464.0 A6,6 0 0 1 1178.0,476.0 L1178.0,504.0 A6,6 0 0 1 1178.0,516.0 L1178.0,524.0 A6,6 0 0 1 1178.0,536.0 L1178.0,564.0 A6,6 0 0 1 1178.0,576.0 L1178.0,590.0" fill="none" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M896.0,590.0 L896.0,604.0 A6,6 0 0 1 896.0,616.0 L896.0,690.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M896.0,590.0 L896.0,604.0 A6,6 0 0 1 896.0,616.0 L896.0,690.0" fill="none" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1328.0,272.0 L1328.0,464.0 A6,6 0 0 1 1328.0,476.0 L1328.0,504.0 A6,6 0 0 1 1328.0,516.0 L1328.0,564.0 A6,6 0 0 1 1328.0,576.0 L1328.0,630.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1328.0,272.0 L1328.0,464.0 A6,6 0 0 1 1328.0,476.0 L1328.0,504.0 A6,6 0 0 1 1328.0,516.0 L1328.0,564.0 A6,6 0 0 1 1328.0,576.0 L1328.0,630.0" fill="none" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M942.0,630.0 L942.0,690.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M942.0,630.0 L942.0,690.0" fill="none" stroke="#ef6c00" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1028.0,272.0 L1028.0,464.0 A6,6 0 0 1 1028.0,476.0 L1028.0,504.0 A6,6 0 0 1 1028.0,516.0 L1028.0,524.0 A6,6 0 0 1 1028.0,536.0 L1028.0,544.0 A6,6 0 0 1 1028.0,556.0 L1028.0,564.0 A6,6 0 0 1 1028.0,576.0 L1028.0,584.0 A6,6 0 0 1 1028.0,596.0 L1028.0,610.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1028.0,272.0 L1028.0,464.0 A6,6 0 0 1 1028.0,476.0 L1028.0,504.0 A6,6 0 0 1 1028.0,516.0 L1028.0,524.0 A6,6 0 0 1 1028.0,536.0 L1028.0,544.0 A6,6 0 0 1 1028.0,556.0 L1028.0,564.0 A6,6 0 0 1 1028.0,576.0 L1028.0,584.0 A6,6 0 0 1 1028.0,596.0 L1028.0,610.0" fill="none" stroke="#546e7a" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1262.0,401.0 L1262.0,464.0 A6,6 0 0 1 1262.0,476.0 L1262.0,504.0 A6,6 0 0 1 1262.0,516.0 L1262.0,524.0 A6,6 0 0 1 1262.0,536.0 L1262.0,564.0 A6,6 0 0 1 1262.0,576.0 L1262.0,610.0" fill="none" stroke="#ffffff" stroke-width="5.6"/><path d="M1262.0,401.0 L1262.0,464.0 A6,6 0 0 1 1262.0,476.0 L1262.0,504.0 A6,6 0 0 1 1262.0,516.0 L1262.0,524.0 A6,6 0 0 1 1262.0,536.0 L1262.0,564.0 A6,6 0 0 1 1262.0,576.0 L1262.0,610.0" fill="none" stroke="#546e7a" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M40.0,150.0 L40.0,690.0" fill="none" stroke="#ffffff" stroke-width="6.5"/><path d="M40.0,150.0 L40.0,690.0" fill="none" stroke="#d32f2f" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M712.0,470.0 L712.0,504.0 A6,6 0 0 1 712.0,516.0 L712.0,524.0 A6,6 0 0 1 712.0,536.0 L712.0,544.0 A6,6 0 0 1 712.0,556.0 L712.0,604.0 A6,6 0 0 1 712.0,616.0 L712.0,690.0" fill="none" stroke="#ffffff" stroke-width="6.5"/><path d="M712.0,470.0 L712.0,504.0 A6,6 0 0 1 712.0,516.0 L712.0,524.0 A6,6 0 0 1 712.0,536.0 L712.0,544.0 A6,6 0 0 1 712.0,556.0 L712.0,604.0 A6,6 0 0 1 712.0,616.0 L712.0,690.0" fill="none" stroke="#263238" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="180.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="180.0" cy="272.0" r="4.5" fill="#00897b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="180.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="330.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="330.0" cy="272.0" r="4.5" fill="#6d4c41" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="330.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="480.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="480.0" cy="272.0" r="4.5" fill="#c2185b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="480.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="630.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="630.0" cy="272.0" r="4.5" fill="#0288d1" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="630.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="780.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="780.0" cy="272.0" r="4.5" fill="#9e9d24" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="780.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="930.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="930.0" cy="272.0" r="4.5" fill="#5e35b1" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="930.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1080.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1080.0" cy="272.0" r="4.5" fill="#546e7a" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1080.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1230.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1230.0" cy="272.0" r="4.5" fill="#8e24aa" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1230.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1380.0" cy="150.0" r="4.5" fill="#d32f2f" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1380.0" cy="272.0" r="4.5" fill="#ef6c00" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1380.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="362.0" cy="510.0" r="4.5" fill="#00897b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="512.0" cy="510.0" r="4.5" fill="#00897b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="542.0" cy="530.0" r="4.5" fill="#2e7d32" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="392.0" cy="550.0" r="4.5" fill="#1565c0" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="842.0" cy="610.0" r="4.5" fill="#0288d1" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="962.0" cy="570.0" r="4.5" fill="#9e9d24" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1112.0" cy="570.0" r="4.5" fill="#9e9d24" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="850.0" cy="550.0" r="4.5" fill="#ef6c00" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="712.0" cy="470.0" r="4.5" fill="#263238" stroke="#ffffff" stroke-width="1.2"/>
+<text x="122.0" y="514.0" font-size="11" fill="#00897b" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N1</text>
+<text x="206.0" y="534.0" font-size="11" fill="#2e7d32" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">B</text>
+<text x="236.0" y="554.0" font-size="11" fill="#1565c0" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">A</text>
+<text x="272.0" y="574.0" font-size="11" fill="#6d4c41" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N2</text>
+<text x="422.0" y="594.0" font-size="11" fill="#c2185b" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N3</text>
+<text x="572.0" y="614.0" font-size="11" fill="#0288d1" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N4</text>
+<text x="722.0" y="574.0" font-size="11" fill="#9e9d24" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N5</text>
+<text x="806.0" y="554.0" font-size="11" fill="#ef6c00" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Cin</text>
+<text x="872.0" y="534.0" font-size="11" fill="#5e35b1" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N6</text>
+<text x="890.0" y="594.0" font-size="11" fill="#8e24aa" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">S</text>
+<text x="936.0" y="634.0" font-size="11" fill="#ef6c00" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">Cout</text>
+<text x="1022.0" y="614.0" font-size="11" fill="#546e7a" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">N7</text>
+<rect x="653" y="681" width="302" height="18" rx="2" fill="#212121"/>
+<rect x="662.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<rect x="708.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<rect x="754.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<rect x="800.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<rect x="846.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<rect x="892.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<rect x="938.5" y="686.5" width="7" height="7" fill="#ffd54f"/>
+<text x="652.0" y="674.0" font-size="12" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke">J1 (штыри PLS-7)</text>
+<text x="666.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >1</text>
+<text x="666.0" y="732.0" font-size="11" fill="#d32f2f" text-anchor="middle" font-weight="bold" >+5V</text>
+<text x="712.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >2</text>
+<text x="712.0" y="732.0" font-size="11" fill="#263238" text-anchor="middle" font-weight="bold" >GND</text>
+<text x="758.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >3</text>
+<text x="758.0" y="732.0" font-size="11" fill="#1565c0" text-anchor="middle" font-weight="bold" >A</text>
+<text x="804.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >4</text>
+<text x="804.0" y="732.0" font-size="11" fill="#2e7d32" text-anchor="middle" font-weight="bold" >B</text>
+<text x="850.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >5</text>
+<text x="850.0" y="732.0" font-size="11" fill="#ef6c00" text-anchor="middle" font-weight="bold" >Cin</text>
+<text x="896.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >6</text>
+<text x="896.0" y="732.0" font-size="11" fill="#8e24aa" text-anchor="middle" font-weight="bold" >S</text>
+<text x="942.0" y="716.0" font-size="11" fill="#546e7a" text-anchor="middle" font-weight="bold" >7</text>
+<text x="942.0" y="732.0" font-size="11" fill="#ef6c00" text-anchor="middle" font-weight="bold" >Cout</text>
+<text x="972.0" y="688.0" font-size="12" fill="#263238" text-anchor="start" font-weight="normal" >← сюда надевается гнездо PBS-7 кабеля</text>
+<text x="972.0" y="704.0" font-size="12" fill="#263238" text-anchor="start" font-weight="normal" >от платы ввода-вывода (схема 14)</text>
+<text x="40.0" y="780.0" font-size="13" fill="#263238" text-anchor="start" font-weight="bold" >Как читать:</text>
+<line x1="70.0" y1="788.0" x2="70.0" y2="836.0" stroke="#78909c" stroke-width="2.5" stroke-linecap="round" />
+<rect x="62" y="797.6" width="16" height="28.8" rx="6" fill="#e9d3a4" stroke="#8d6e63" stroke-width="1.3"/>
+<rect x="62" y="801.6" width="16" height="3.5" fill="#fbc02d"/>
+<rect x="62" y="807.1" width="16" height="3.5" fill="#7b1fa2"/>
+<rect x="62" y="812.6" width="16" height="3.5" fill="#6d4c41"/>
+<rect x="62" y="820.9" width="16" height="3.5" fill="#c9a227"/>
+<text x="57.0" y="810.0" font-size="11" fill="#263238" text-anchor="end" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke"></text>
+<text x="57.0" y="823.0" font-size="10" fill="#546e7a" text-anchor="end" font-weight="normal" stroke="#ffffff" stroke-width="3" paint-order="stroke"></text>
+<text x="88.0" y="815.0" font-size="12" fill="#263238" text-anchor="start" font-weight="normal" >резистор (полоски: 10 кОм — коричн.-чёрн.-оранж.)</text>
+<path d="M515,789 C470,789 470,857 515,857 Z" fill="#37474f" stroke="#101418" stroke-width="1.2"/>
+<line x1="515.0" y1="789.0" x2="515.0" y2="857.0" stroke="#cfd8dc" stroke-width="2" stroke-linecap="round" />
+<circle cx="510" cy="798" r="3.5" fill="#cfd8dc"/>
+<text x="497.0" y="802.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<circle cx="510" cy="823" r="3.5" fill="#cfd8dc"/>
+<text x="497.0" y="827.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="510" cy="848" r="3.5" fill="#cfd8dc"/>
+<text x="497.0" y="852.0" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold" >S</text>
+<text x="520.0" y="802.0" font-size="11" fill="#263238" text-anchor="start" font-weight="bold" stroke="#ffffff" stroke-width="3" paint-order="stroke"></text>
+<text x="528.0" y="815.0" font-size="12" fill="#263238" text-anchor="start" font-weight="normal" >транзистор 2N7000: плоской стороной вправо, ножки D, G, S</text>
+<circle cx="70" cy="866" r="4.5" fill="#263238"/>
+<line x1="50.0" y1="866.0" x2="90.0" y2="866.0" stroke="#263238" stroke-width="2.6" stroke-linecap="round" />
+<line x1="70.0" y1="866.0" x2="70.0" y2="884.0" stroke="#263238" stroke-width="2.6" stroke-linecap="round" />
+<text x="100.0" y="870.0" font-size="12" fill="#263238" text-anchor="start" font-weight="normal" >точка — провода СОЕДИНЕНЫ (спаяны)</text>
+<line x1="490.0" y1="866.0" x2="550.0" y2="866.0" stroke="#263238" stroke-width="2.6" stroke-linecap="round" />
+<path d="M520,848 L520,860 A6,6 0 0 1 520,872 L520,884" fill="none" stroke="#c62828" stroke-width="2.6"/>
+<text x="560.0" y="870.0" font-size="12" fill="#263238" text-anchor="start" font-weight="normal" >дуга — провода проходят друг над другом, НЕ соединены</text>
+</svg>

@@ -1,91 +1,116 @@
-# Одна программа, три процессора
+# 4-битный сумматор на транзисторах 2N7000
 
-Один и тот же скетч прошит в три платы: Arduino Nano (AVR, 8 бит, 16 МГц),
-ЙоТик-32 и ESP32-CAM (Xtensa LX6, 32 бита, до 240 МГц). Он измеряет, сколько
-тактов уходит на операции, вызовы функций и чтение разных видов памяти.
+Сумматор с последовательным переносом (ripple-carry) из 77 дискретных
+полевых транзисторов, без единой микросхемы. Складывает два 4-битных числа
+и входной перенос: A + B + Cin, результат от 0 до 31 горит на пяти светодиодах.
+
+**[Схема в симуляторе Falstad](https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAWACgAPcQkFAFnBge-EALSiGgRhBAHCCAhEEC8IIGkQQJwgAHQDOgQRBAwiCAeEF2AGEFmA+EEACIBs0bA-CDHNgbhBArCCAWEGOAmECMO7gGRAlu6w9MHeVtjP3V5Aw0AOQBZAHkAZQ0UKIx4DQAKQAwQBkBcEEBUEA1VAEdkjVlTA3lAdhBpTRNKooAHDTBIDUAuEEA8EF0ASnYuIQoUQR4EEYEwAUBKEEBFEDsO+TkHa2N-QI67QDkQQHEQD22ALg1qg11F7Vki0vUwaA1AAhAHau1vWSMjrVcHEydpYydFBoAMIAewArgAXDQJbDQlDQsDQ9rqVxLZ53dSAdBBPLMlGp1FZTG5-lcNAgNIAkEAANBYAipSepkRToOwAEogYg8MAoPAgQiTHlQIV8WhCqgwBDsADuHK5gqEVG5vMg0u4isFmBGSqgqs14EF2DwAuVqsNxtEnP1JrYMr4lu1hAQcutMsdzpAGEIvO1KptHq9VpAeDw6pdQZDgdIWsFvplUcDzHGgd96jVCcIiuII0VIAAZgBDAA26jo7DQ5AV4Cz4E9VYmIAAgth2AAnNNgauVlBOoVteDsADmae7XIzvAw2Z1bFTeu1s+rOYLxdLbHL4611Z53urAgbKFb67rh5HvfgvqHepPl4nYvYqbNgYfHcnECXJbLkHIT53cCPu9YbBtt+IwPieipnoOICgT2oE3uKd4Wu6dpcgu4B5kW76rp+iFHgg3J-o2vptshf6WmByD9mwQ4kSeNFwVOqZuoGTHPr26HLh+5AsdWhA3qxAgAELNoBfI9qxTHkX2cCQRJPYSfRKb+t6gqetuL7sZha6qUeGBGgRAn7iJ2msdpkkQVRSm8D2pkKQhwahuGmbqW+K5rvZR54PaO4gAJAFtu5rHuWZlFDkFPZBbZ04cp2grxqxi4Ya52FxZ2cBqaIPlEdFG4jPGwXSRZeU9nlkWpom0bemASbxWhLmcYI1WdkI6UCECACWAB2B7lUePX5eeDUjCefWRYMfACNgYC8vwE1TRlQyAOQgdR2Gs6gNgMfIilBc0YFtk28pMPBLfYq0CRtzDYDw+36pd20HdwICAPggARBLY51XfyoxQZ9h0gPcBjVKYgDyIE4GiQB8DbIqoLTqAJUMw+1HVFOogBJhMjCSQDS6hAgB7KWiKVA-b+4qiKKJMSqq+O-mAtYE1OMo0zwdPYEmdOxlBrO-uMB3E6q3Ok1QaQCGzqpCwLjni+z7l020PYi36stM9TKDYBMvMKyrauKiKPPwQrOvi1Veny22jOG7Tn3gZRubgONogRmbfARlQKDQBAqDsDbUwCHhWq1r7Qqu+70CGUOZv8+Hdt62u3v2w5TtULuvox3bAfagHgnJ9hjuffxP0gFEYAAPq+oMeBM9gYjl6IlfzQIhcHizWscxMlsUQVNuq4nEZN3Hgdu1AIee1B4gB73AcuwPHsWePBpJggUdTmuXd97gwsRkn9Ur2PkA+-h9fF1nX6s59l0HfnUQoCXG2XRMtd8IQd-C7bBeGW2-N0x-bdSb6NskQnwwDrO14FPIebA-6WgDvzCeIDg6h0AQg6Bi8j44QAWgjemV6okQzhGDOBdD71S-j7O2D9n5RGwNfTgFBDQ1wEIQGhfB74v3IQeMWdM2Hf3MjbXiEwIxsOAUHQehluE3gDmLGBgjp5DnESpXeFBkH1R4X3JiaDX6ULXEogOTE8HkPUdhDhAgJyJwvnwShXAMBTFoUGSxjDn6WKiHwEoDZACpRGdES0tfzS04dbIMTs+7SwEaA4RvjeQB3chIoJkFwmCnCQorC5AjRAKoHgVWfd66mJQYkig+EUkjDwYjeqXiBCeSZhfBAZigzEETrXUg1S7H10lCJRWhtIBy28R3ZAIgAHNIAZPOBw82giDTq0sY+E+lCMgs0iOIz5ECGjtnSAXSHZpTSQXDJ9VBl7y1CsnR5SUE9Nzp+VuZDCAVLaIQCukwhCXLrgXQg3VNaG0eaQ08PjuS-m6c8wJ-TwH6i5vhbkqSIk-LDo8iOYK4kxzQN3RUU116JxAAU+JfzaAArhdk+sUQ9kbOebnfg58yEYDOfwJ+4BK6ksmPXDA3UDYy1pe03+ZLaYO1pd8iZvywDYH9gCg2wL2Vh15fKXlkLs5cqZg7S6MKMpRFOfssVGKyVjh0US-Z9LKVdPzhjc6fA5q2PAHhA6TD7F4BKAkbqCBjbUwtcLBlAyECswdtavu4zp5e3tXkgFTq+VSP1XpCOXqRUVndX3Kqt1VGFz0UG+enrbq7Mjb6m1h0Pn5xxudBAxBha1yEBmqxlKC7EBKKCSE70+TiGYDwR+CKhj-UBiDVoENETqGhhoXyzRgSNo0GjJt6gEhgCxkCQyeMK1yToT2EmW0kDk2gI0uMw6uS1iYuzM2TFe6LtNEmbRgo11+n5kxMW26ZT7vChGA9EsWIzNPc0lijzL03rEgbS9D6xJOu3abBdYlaxGNeR02OOB508D-f3H5Xs7bGU-QGF1YCw6fr0mbEM5MNmgdutqQD-5EOGIDChgMgkAIx0-WW6sX6D5FwAmXCtVTeDVxIFWg+jcN0wSTF+q2HSV6Ad7oByDwTWMBnYxB2B-KW4ej0r3eDt5kWsdumvD0YbGy4ewtx3kUntLEbk8fEYX6z4enEPXK+pHvojGo6IR+fIKN5svgeXdPZ+ZMfboykigHrO3U48PezAZrN8ckVBhBukfYxOJkvbC9mw18Jk75LBlplN8Ow-gkjhCVKj1A9pguFC9MIBoYZ+hvJDNmeEm2I9AG5E2Z-sPJRgGxYcf466vkN5tLlY85Eiy5W9Ji1E-MriNXbp7pk5fWLyLSsBj3dF3RqmPSFfEF+ojazevmMsYZvAs3TPMMccUFxbj-InuPYLcQzHGVZMA+5Crnngl7YDAd+rIKJY+Ylq1gLCS-H7dSahqbI2Tu8lyZZVqL2+HiBKVphFWLpuVMJhR2pJmaMF0aabC9YkZlFa4Z0wxyHYdOcq2Ar2iyMPelh+dgTzSrvNJu-sjH0muQrKew43rMdifGTJ0N8pI28dlqOX96Vpy9PnPI7Ci5YPbkyoeak69j3tu2YGdCknN11Mo6O6L38xlHnaWcxZQF6nYOPMJzi2XyH0VPdTci95gtMPa7p5T7O8uy34pZ1SwH3I+AGYo5y23POzPUqaU+rkBs4dvPlYBqY+BxeK69t7zDHucc+t97yfHBt1d6+98hyV4v65s42UH708flMFyJQzj3ZbbeGKS727Vc1DNVSL4t41przV6RYk6z3P7g0+5r1LhrbrGOYZr6HrzRtDGwaddHmO9fkNpYA914uDP69t9uungHY-mtlozFthFA6005uLyQOhZf64FuKEWiEJa8C1nLUGWmD0a3A1BuoFAEN4RNphgZNt2Nr+dvRigftwkh0cnwp9YgYzhRkzFNOymHgb-P2IAsZVUM2YAwTSA9mXuSA-maAvmWKfCMWBAv0FAnJCMVAmUdySA5pLA5AYqAFR5fA5XD-LUA2Egigz1PSVAt9UAkAjkWsHbAZO2OKWseMAPW2SYYnM2TZIDXHA-XeRUQQsdW7Lg7KSMbyPcdDBHBMYnQSQyPDIAg-asMgJmGLQyMjDkB+SjIAnQszPyKA-CWApgkXX5FeeMWA1CaXcwpnEQXuPgxXIcBwoQwTZpNrEeKgSwuReMXcRQ+TOwiaORPg4jfwtTRgj6XkNQ6VK+TQ-TbQ0pXKfQ5hN+BBOA2KUw4rX5EieMeA6w5vHCPg6ZEQJwhBNoCdeUGZDwnIncTA7yAycLUnJZcCLpDQuLKI-2Vg4-XROItLKInQzLBI3nXLUbAQSAlAzI+HJReMFA-I4DarbZEQMWRw1HeBZY1w9Y0QlBaYniYqbyHrMIhY2Q89Vono+qCYgDcQaI9JIuOIixMYnQ+bB49Q+xZbVbA8HAjArwyYnxLJeMHAuY9lG2LJPggKYnUosEraMErYwpPxf41JXwqbQ4kE4nd7EIxFZEzA2sX7a4iHW4jaTyLwnQ0HDNF4hpbqGZXAykn4n9YnOKSkwEqrPg5kmZFYmwsOVk1w5pdwsQvg+kv3REinQ4lkkQPsLHU48pYU6k0nG8XEmVfEqhDnIY8tPQsku5fnXKIghEmkxlfXCQ0gjg1YmXFogUVJNkhrUFM0rkx5Hk-ZMXOKdFREpfPXMXZk9FdEgHYU4gg-C3OUolOIm3JIrkclIY53GlAUnlAUnUgZeVOKCgxktHJlJoylP3c0i7cPZALaDM205PdgzsePQU05YU+VZk+PD0-0xDKM93EQXEhIAMnVforkA1UM5hE1YoM1JpJ1XArs6MjlYNOKLshM4JKqaqHgp1NM3HccrkqcmEvXfszsIfCQ0IjZYNZkxcj0yUlcmgg-efCIjKIEYSQYdNZ47gHNUk3nLfHfEtC6LUIYG8+aHgU-OtdQbACGWEG-Ftd85tbGL81GdGbAftcEXfNgd-ctLLK5PjROP-cUAAv0e0ZqGsLkBCpdA-BChw5C9dW8tzeUDCndHCgMZY3Cw9YIhCgKIiiWMCggpCiDcA1khC0gyipdG0+ig2Ri8A1i+i8c3Cug0Yb0H01JZgjlO2G3PiuUPxTg2OJUYQ50EmdkxC-Ue0A-SaScVVAUPxbUESjKJsGQqShMHkBFISDZfinKCXaVYuQ88Aaud5IaKytAesexQw9CnjaqR5QSzuc3PxBwi3TgleXSrytlH1Lyy0Bw5SsTZeDyxTYIi3XcYScK0MKgKTXS4jWK+TFy1JTTUgnTIuCy2+P5VuaMRZXnVIiOBC8FASswiBMS0JeUbyo07I+0fSsoxq0o8FSBeUUK6ohqvxT5bqnyFK8gEiJKh2Rq5K9o0yheU0zFChCyvovKvkGhay4Y1hEigiqK8qrIkRaMe7KK8Suqzaq0QWKKgKrzZYlACLYIjqsQpRTS69Xqnrfqo43S69DBXRB606oXdUVJG4iy+4uap4uaszN41xD4h2Ui4a9a+HEEi3AKWqmw4E9SxqmG46+BGGy0AKS6zJBGvxNE6KqbB6qGiMHGjBA8wpcGkYX7TKvEiywkua0HRaszSHKi3ipm0gty2QzS7k2Ggo5kxqzm5GyZVks60nMSDGjZHgi3MU-UO60xB6nm5ZVMkaqmsWsSG05nSm+UiypUxalUgG5he5JpZizDG01yiqlFKW5SM0rm+YvU3Shi5quqy06MBqs00Wl05WdS903Gkmt2+KwQVXF68pWW42y2hGr6jPbK86ElOah3Aq+yqlcMyqYPBWiGr3H09S1iq2oEpMg622BW-mpXDO+0Vi12mOEsiWss3GjW3MmSxVX2q3WWjOs03PUygQGEQvZSQqkvDuuOguNsjs02LitvVXFOuvFy9S8czOpk1c3mie-OsOCe+0ccku7Oae8e5DSu8ylclyx1degOiOuc4erUXcymq8xU486OtfXW+xS8oC68w0ROslYMB8kALIeQX4DoAwQAMRBpAgZMhNAvgfg-hz9ABmEDMDkAZDAH6BAvkqmFFOEubvHWgsHhnRgebuGgQd1HvS6Wpgwb9DpSGXgZKL5kIboSftgbmVVC9G9GbrRNwbbHQZEHQafsTjSHYCECGnvSfuGmDRGAABM6ACwwRCwIQGBCw6BeG2IYLIAAIbYUBRSnRppn0O9Di5HJgFHeBUz1HWpb6LJuG9Jhpdy9YuB+BFR+QEqsyzGMpxBT7iIcHsHtZmHRBWG2B2HDYnZdZ9Ukw+GBH8whGRGxGJGcwpGZHvpvQtGrVlGt429nKtQtGQA26LIZYnUZZDGpwuAnxLGnZDotoxAqAEn34SHZlbZHG+BnHXGJrinQlhKeGQB+HBHhHRHxHJHB5pHh4051GKmqpInkV2nsNF7os6zIJOmA0k0EMqEI5LHH5vRMmNH4nUiqHbYRAFmpgSmynjNln3G+QyGam6nfGGmAnmmYBWnflq8BttnumNElHwLFQ4mC8LJlmX0yHUnS5HrLGsAj6cnZm7n-Im6RBaHVnfRXH-m3szSdmfG-HGnAm0Jgnh5RMumQXYmLnsI4X1H8dbmBo0Te8zTnmCS7zLHv9RxPnxAtU2AgA)**: открывается в браузере,
+по переключателям можно щёлкать.
 
 ---
 
 ## Результаты работы
 
-Сырой вывод всех плат, таблица и графики: **[папка Results](Results/)**
+Фото устройства: **[папка Results](Results/)**
 
-### 1. Частота отличается в 15 раз, а скорость — от 27 до 600 раз
+![Устройство](Results/device.jpg)
 
-![ESP32 против Nano](Results/chart_ratio.png)
+Пять плат: четыре платы разряда (по одной на бит) и плата ввода-вывода с
+переключателями и светодиодами. Питание 5 В от модуля MB102.
 
-| операция | Nano, тактов | ESP32, тактов | ESP32 быстрее по времени |
-|---|---|---|---|
-| сложение 8 бит | 30 | 17 | 27× |
-| сложение 32 бита | 35 | 13 | 40× |
-| умножение 32 бита | 105 | 13 | 120× |
-| деление 32 бита | 645 | 16 | 602× |
-| умножение float | 181 | 13 | 208× |
+### Как читать
 
-Мандельброт 48×16 во float: 817,7 мс на Nano против 1,6 мс на ESP32 — в 505 раз.
+- Рычажки DIP-8 слева направо: B0 B1 B2 B3 A0 A1 A2 A3. Рычажок вверх (к ON) = 1.
+- Отдельный красный DIP-1 слева = Cin.
+- Светодиоды слева направо: Cout S3 S2 S1 S0, веса 16 8 4 2 1.
 
-- 32-битное число AVR складывает за 4 команды по байту, перенос идёт через флаг
-  (см. [дизассемблер](Results/disasm_chain.txt)).
-- У AVR нет команды деления и блока плавающей точки — их заменяет подпрограмма.
-- На Nano Мандельброт в целых числах (8.8) в 4,8 раза быстрее, чем во float.
-- Такты на ESP32 включают барьеры `memw` вокруг переменных `volatile`, поэтому
-  сложение, умножение и float там неотличимы: сама операция занимает около такта.
+### Примеры
 
-### 2. Кэш виден как ступенька на 32 байтах
+| A | B | Cin | сумма | светодиоды Cout S3 S2 S1 S0 | фото |
+|---|---|---|---|---|---|
+| 1000 (8) | 0010 (2) | 0 | 10 | 0 1010 | [sum_10](Results/sum_10.jpg) |
+| 1000 (8) | 1010 (10) | 0 | 18 | 1 0010 | [sum_18](Results/sum_18.jpg) |
+| 1100 (12) | 1110 (14) | 0 | 26 | 1 1010 | [sum_26](Results/sum_26.jpg) |
+| 1100 (12) | 1110 (14) | 1 | 27 | 1 1011 | [sum_27](Results/sum_27.jpg) |
 
-![Чтение памяти](Results/chart_memory.png)
+<p>
+<img src="Results/sum_10.jpg" width="49%"> <img src="Results/sum_18.jpg" width="49%">
+<img src="Results/sum_26.jpg" width="49%"> <img src="Results/sum_27.jpg" width="49%">
+</p>
 
-- Внутренняя SRAM ESP32 — около 9 тактов на чтение при любом шаге.
-- У Nano кэша нет, линия ровная.
-- PSRAM (внешняя DRAM) и флеш растут с шагом и выходят на полку с шага 32 байта —
-  это длина строки кэша. Промах в PSRAM ≈ 270 тактов ≈ 1,1 мкс.
+- 8 + 10 = 18: в старшем разряде 1 + 1, получается перенос, загорается Cout.
+- 26 и 27 отличаются только Cin: добавилась единица в младший разряд, загорелся S0.
 
-### 3. Частоту подняли втрое, а внешняя память ускорилась на 11 %
+---
 
-![Частота](Results/chart_freq.png)
+## Как это работает
 
-| при 80 → 240 МГц | ускорение |
-|---|---|
-| арифметика | 2,91× |
-| SRAM (ЙоТик) | 3,02× |
-| PSRAM (ESP32-CAM) | 1,12× |
-| флеш (ESP32-CAM) | 1,11× |
+- **Вентиль И-НЕ**: два n-МОП транзистора последовательно и резистор 10 кОм к +5 В.
+  Выход 0, только когда оба входа 1.
+- **Полный сумматор** (один разряд): 9 вентилей И-НЕ, это 18 транзисторов и 9 резисторов.
+  Складывает A, B, Cin и выдаёт сумму S и перенос Cout.
+- **Перенос**: Cout разряда i идёт на Cin разряда i+1, как «1 в уме» при сложении
+  столбиком. Перенос бежит от младшего разряда к старшему.
 
-### Прочее
+```
+N1 = И-НЕ(A, B)      N4 = И-НЕ(N2, N3)  = A xor B
+N2 = И-НЕ(A, N1)     N5 = И-НЕ(N4, Cin)
+N3 = И-НЕ(B, N1)     N6 = И-НЕ(N4, N5)
+                     N7 = И-НЕ(Cin, N5)
+S    = И-НЕ(N6, N7)  = A xor B xor Cin
+Cout = И-НЕ(N1, N5)  = A·B + Cin·(A xor B)
+```
 
-- Вызов функции: на ESP32 глубокая рекурсия дороже одиночного вызова
-  (59 и 34 такта) — сбрасываются регистровые окна. На Nano разницы нет.
-- `double` на ESP32 считается программно (128 тактов против 13 у `float`),
-  на Nano `double` — это тот же `float`.
-- На ESP32 байтовые переменные медленнее 32-битных: нужны команды `l8ui` и `sext`.
-- Запись байта EEPROM на Nano ≈ 3,3 мс.
-- Открытый вопрос: SRAM на ESP32-CAM при разгоне ускорилась в 2,4 раза, а не в 3,
-  как на ЙоТике.
+---
 
-Каждая плата прогнана дважды, расхождение меньше 0,1 %.
+## Схемы
+
+### Плата ввода-вывода и вся система
+
+Рычажки через резисторы 10 кОм подают 0 или 5 В на входы, выходы разрядов
+открывают транзисторы Q1–Q5, а те зажигают светодиоды. Четыре кабеля по
+7 проводов идут к платам разряда.
+
+![Плата ввода-вывода](Results/io_board_and_system.png)
+
+### Плата разряда
+
+Девять ячеек И-НЕ, разъём J1: +5V, GND, A, B, Cin, S, Cout.
+
+![Плата разряда](Results/bit_board.png)
+
+Остальные чертежи (расположение деталей по отверстиям, пайка снизу, цоколёвка):
+[schematics/](schematics/), подробно в [assembly.md](assembly.md).
 
 ---
 
 ## Состав
 
+| деталь | всего |
+|---|---|
+| транзистор 2N7000 | 77 (18 × 4 разряда + 5 на светодиоды) |
+| резистор 10 кОм | 45 |
+| резистор 470 Ом | 5 |
+| светодиод 5 мм | 5 |
+| DIP-переключатель на 8 и на 1 позицию | 1 + 1 |
+| макетная плата 7×9 см | 5 |
+| модуль питания MB102 | 1 |
+
 ```
-code/bench/bench.ino    скетч с тестами, один для всех плат
-code/analyze.py         разбор вывода, таблица и графики
-Results/                вывод плат, summary.csv, графики, дизассемблер
+Results/        фото устройства и основные схемы
+schematics/     все чертежи (SVG)
+sim/            схема для Falstad: ссылка и текст для импорта
+tools/          генераторы чертежей и проверка раскладки на 512 комбинациях
+assembly.md     сборка, проверка по шагам, таблица истинности разряда
+wiring.md       список монтажа по отверстиям
 ```
 
 ---
 
 ## Как повторить
 
-```
-Nano:       arduino:avr:nano            ядро arduino:avr 1.8.8
-ЙоТик-32:   esp32:esp32:esp32           ядро esp32:esp32 3.3.11
-ESP32-CAM:  esp32:esp32:esp32cam
-```
-
-1. Прошить `code/bench/bench.ino`, открыть монитор порта на 115200.
-2. Дождаться строки `# готово`, скопировать вывод в `Results/raw_exploreit.txt`.
-3. `python code/analyze.py` (нужен matplotlib) — пересоберёт таблицу и графики.
-
-Формат вывода: `плата;тест;операций;время_мкс;тактов_на_операцию`.
+1. Открыть [схему в Falstad](https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAWACgAPcQkFAFnBge-EALSiGgRhBAHCCAhEEC8IIGkQQJwgAHQDOgQRBAwiCAeEF2AGEFmA+EEACIBs0bA-CDHNgbhBArCCAWEGOAmECMO7gGRAlu6w9MHeVtjP3V5Aw0AOQBZAHkAZQ0UKIx4DQAKQAwQBkBcEEBUEA1VAEdkjVlTA3lAdhBpTRNKooAHDTBIDUAuEEA8EF0ASnYuIQoUQR4EEYEwAUBKEEBFEDsO+TkHa2N-QI67QDkQQHEQD22ALg1qg11F7Vki0vUwaA1AAhAHau1vWSMjrVcHEydpYydFBoAMIAewArgAXDQJbDQlDQsDQ9rqVxLZ53dSAdBBPLMlGp1FZTG5-lcNAgNIAkEAANBYAipSepkRToOwAEogYg8MAoPAgQiTHlQIV8WhCqgwBDsADuHK5gqEVG5vMg0u4isFmBGSqgqs14EF2DwAuVqsNxtEnP1JrYMr4lu1hAQcutMsdzpAGEIvO1KptHq9VpAeDw6pdQZDgdIWsFvplUcDzHGgd96jVCcIiuII0VIAAZgBDAA26jo7DQ5AV4Cz4E9VYmIAAgth2AAnNNgauVlBOoVteDsADmae7XIzvAw2Z1bFTeu1s+rOYLxdLbHL4611Z53urAgbKFb67rh5HvfgvqHepPl4nYvYqbNgYfHcnECXJbLkHIT53cCPu9YbBtt+IwPieipnoOICgT2oE3uKd4Wu6dpcgu4B5kW76rp+iFHgg3J-o2vptshf6WmByD9mwQ4kSeNFwVOqZuoGTHPr26HLh+5AsdWhA3qxAgAELNoBfI9qxTHkX2cCQRJPYSfRKb+t6gqetuL7sZha6qUeGBGgRAn7iJ2msdpkkQVRSm8D2pkKQhwahuGmbqW+K5rvZR54PaO4gAJAFtu5rHuWZlFDkFPZBbZ04cp2grxqxi4Ya52FxZ2cBqaIPlEdFG4jPGwXSRZeU9nlkWpom0bemASbxWhLmcYI1WdkI6UCECACWAB2B7lUePX5eeDUjCefWRYMfACNgYC8vwE1TRlQyAOQgdR2Gs6gNgMfIilBc0YFtk28pMPBLfYq0CRtzDYDw+36pd20HdwICAPggARBLY51XfyoxQZ9h0gPcBjVKYgDyIE4GiQB8DbIqoLTqAJUMw+1HVFOogBJhMjCSQDS6hAgB7KWiKVA-b+4qiKKJMSqq+O-mAtYE1OMo0zwdPYEmdOxlBrO-uMB3E6q3Ok1QaQCGzqpCwLjni+z7l020PYi36stM9TKDYBMvMKyrauKiKPPwQrOvi1Veny22jOG7Tn3gZRubgONogRmbfARlQKDQBAqDsDbUwCHhWq1r7Qqu+70CGUOZv8+Hdt62u3v2w5TtULuvox3bAfagHgnJ9hjuffxP0gFEYAAPq+oMeBM9gYjl6IlfzQIhcHizWscxMlsUQVNuq4nEZN3Hgdu1AIee1B4gB73AcuwPHsWePBpJggUdTmuXd97gwsRkn9Ur2PkA+-h9fF1nX6s59l0HfnUQoCXG2XRMtd8IQd-C7bBeGW2-N0x-bdSb6NskQnwwDrO14FPIebA-6WgDvzCeIDg6h0AQg6Bi8j44QAWgjemV6okQzhGDOBdD71S-j7O2D9n5RGwNfTgFBDQ1wEIQGhfB74v3IQeMWdM2Hf3MjbXiEwIxsOAUHQehluE3gDmLGBgjp5DnESpXeFBkH1R4X3JiaDX6ULXEogOTE8HkPUdhDhAgJyJwvnwShXAMBTFoUGSxjDn6WKiHwEoDZACpRGdES0tfzS04dbIMTs+7SwEaA4RvjeQB3chIoJkFwmCnCQorC5AjRAKoHgVWfd66mJQYkig+EUkjDwYjeqXiBCeSZhfBAZigzEETrXUg1S7H10lCJRWhtIBy28R3ZAIgAHNIAZPOBw82giDTq0sY+E+lCMgs0iOIz5ECGjtnSAXSHZpTSQXDJ9VBl7y1CsnR5SUE9Nzp+VuZDCAVLaIQCukwhCXLrgXQg3VNaG0eaQ08PjuS-m6c8wJ-TwH6i5vhbkqSIk-LDo8iOYK4kxzQN3RUU116JxAAU+JfzaAArhdk+sUQ9kbOebnfg58yEYDOfwJ+4BK6ksmPXDA3UDYy1pe03+ZLaYO1pd8iZvywDYH9gCg2wL2Vh15fKXlkLs5cqZg7S6MKMpRFOfssVGKyVjh0US-Z9LKVdPzhjc6fA5q2PAHhA6TD7F4BKAkbqCBjbUwtcLBlAyECswdtavu4zp5e3tXkgFTq+VSP1XpCOXqRUVndX3Kqt1VGFz0UG+enrbq7Mjb6m1h0Pn5xxudBAxBha1yEBmqxlKC7EBKKCSE70+TiGYDwR+CKhj-UBiDVoENETqGhhoXyzRgSNo0GjJt6gEhgCxkCQyeMK1yToT2EmW0kDk2gI0uMw6uS1iYuzM2TFe6LtNEmbRgo11+n5kxMW26ZT7vChGA9EsWIzNPc0lijzL03rEgbS9D6xJOu3abBdYlaxGNeR02OOB508D-f3H5Xs7bGU-QGF1YCw6fr0mbEM5MNmgdutqQD-5EOGIDChgMgkAIx0-WW6sX6D5FwAmXCtVTeDVxIFWg+jcN0wSTF+q2HSV6Ad7oByDwTWMBnYxB2B-KW4ej0r3eDt5kWsdumvD0YbGy4ewtx3kUntLEbk8fEYX6z4enEPXK+pHvojGo6IR+fIKN5svgeXdPZ+ZMfboykigHrO3U48PezAZrN8ckVBhBukfYxOJkvbC9mw18Jk75LBlplN8Ow-gkjhCVKj1A9pguFC9MIBoYZ+hvJDNmeEm2I9AG5E2Z-sPJRgGxYcf466vkN5tLlY85Eiy5W9Ji1E-MriNXbp7pk5fWLyLSsBj3dF3RqmPSFfEF+ojazevmMsYZvAs3TPMMccUFxbj-InuPYLcQzHGVZMA+5Crnngl7YDAd+rIKJY+Ylq1gLCS-H7dSahqbI2Tu8lyZZVqL2+HiBKVphFWLpuVMJhR2pJmaMF0aabC9YkZlFa4Z0wxyHYdOcq2Ar2iyMPelh+dgTzSrvNJu-sjH0muQrKew43rMdifGTJ0N8pI28dlqOX96Vpy9PnPI7Ci5YPbkyoeak69j3tu2YGdCknN11Mo6O6L38xlHnaWcxZQF6nYOPMJzi2XyH0VPdTci95gtMPa7p5T7O8uy34pZ1SwH3I+AGYo5y23POzPUqaU+rkBs4dvPlYBqY+BxeK69t7zDHucc+t97yfHBt1d6+98hyV4v65s42UH708flMFyJQzj3ZbbeGKS727Vc1DNVSL4t41przV6RYk6z3P7g0+5r1LhrbrGOYZr6HrzRtDGwaddHmO9fkNpYA914uDP69t9uungHY-mtlozFthFA6005uLyQOhZf64FuKEWiEJa8C1nLUGWmD0a3A1BuoFAEN4RNphgZNt2Nr+dvRigftwkh0cnwp9YgYzhRkzFNOymHgb-P2IAsZVUM2YAwTSA9mXuSA-maAvmWKfCMWBAv0FAnJCMVAmUdySA5pLA5AYqAFR5fA5XD-LUA2Egigz1PSVAt9UAkAjkWsHbAZO2OKWseMAPW2SYYnM2TZIDXHA-XeRUQQsdW7Lg7KSMbyPcdDBHBMYnQSQyPDIAg-asMgJmGLQyMjDkB+SjIAnQszPyKA-CWApgkXX5FeeMWA1CaXcwpnEQXuPgxXIcBwoQwTZpNrEeKgSwuReMXcRQ+TOwiaORPg4jfwtTRgj6XkNQ6VK+TQ-TbQ0pXKfQ5hN+BBOA2KUw4rX5EieMeA6w5vHCPg6ZEQJwhBNoCdeUGZDwnIncTA7yAycLUnJZcCLpDQuLKI-2Vg4-XROItLKInQzLBI3nXLUbAQSAlAzI+HJReMFA-I4DarbZEQMWRw1HeBZY1w9Y0QlBaYniYqbyHrMIhY2Q89Vono+qCYgDcQaI9JIuOIixMYnQ+bB49Q+xZbVbA8HAjArwyYnxLJeMHAuY9lG2LJPggKYnUosEraMErYwpPxf41JXwqbQ4kE4nd7EIxFZEzA2sX7a4iHW4jaTyLwnQ0HDNF4hpbqGZXAykn4n9YnOKSkwEqrPg5kmZFYmwsOVk1w5pdwsQvg+kv3REinQ4lkkQPsLHU48pYU6k0nG8XEmVfEqhDnIY8tPQsku5fnXKIghEmkxlfXCQ0gjg1YmXFogUVJNkhrUFM0rkx5Hk-ZMXOKdFREpfPXMXZk9FdEgHYU4gg-C3OUolOIm3JIrkclIY53GlAUnlAUnUgZeVOKCgxktHJlJoylP3c0i7cPZALaDM205PdgzsePQU05YU+VZk+PD0-0xDKM93EQXEhIAMnVforkA1UM5hE1YoM1JpJ1XArs6MjlYNOKLshM4JKqaqHgp1NM3HccrkqcmEvXfszsIfCQ0IjZYNZkxcj0yUlcmgg-efCIjKIEYSQYdNZ47gHNUk3nLfHfEtC6LUIYG8+aHgU-OtdQbACGWEG-Ftd85tbGL81GdGbAftcEXfNgd-ctLLK5PjROP-cUAAv0e0ZqGsLkBCpdA-BChw5C9dW8tzeUDCndHCgMZY3Cw9YIhCgKIiiWMCggpCiDcA1khC0gyipdG0+ig2Ri8A1i+i8c3Cug0Yb0H01JZgjlO2G3PiuUPxTg2OJUYQ50EmdkxC-Ue0A-SaScVVAUPxbUESjKJsGQqShMHkBFISDZfinKCXaVYuQ88Aaud5IaKytAesexQw9CnjaqR5QSzuc3PxBwi3TgleXSrytlH1Lyy0Bw5SsTZeDyxTYIi3XcYScK0MKgKTXS4jWK+TFy1JTTUgnTIuCy2+P5VuaMRZXnVIiOBC8FASswiBMS0JeUbyo07I+0fSsoxq0o8FSBeUUK6ohqvxT5bqnyFK8gEiJKh2Rq5K9o0yheU0zFChCyvovKvkGhay4Y1hEigiqK8qrIkRaMe7KK8Suqzaq0QWKKgKrzZYlACLYIjqsQpRTS69Xqnrfqo43S69DBXRB606oXdUVJG4iy+4uap4uaszN41xD4h2Ui4a9a+HEEi3AKWqmw4E9SxqmG46+BGGy0AKS6zJBGvxNE6KqbB6qGiMHGjBA8wpcGkYX7TKvEiywkua0HRaszSHKi3ipm0gty2QzS7k2Ggo5kxqzm5GyZVks60nMSDGjZHgi3MU-UO60xB6nm5ZVMkaqmsWsSG05nSm+UiypUxalUgG5he5JpZizDG01yiqlFKW5SM0rm+YvU3Shi5quqy06MBqs00Wl05WdS903Gkmt2+KwQVXF68pWW42y2hGr6jPbK86ElOah3Aq+yqlcMyqYPBWiGr3H09S1iq2oEpMg622BW-mpXDO+0Vi12mOEsiWss3GjW3MmSxVX2q3WWjOs03PUygQGEQvZSQqkvDuuOguNsjs02LitvVXFOuvFy9S8czOpk1c3mie-OsOCe+0ccku7Oae8e5DSu8ylclyx1degOiOuc4erUXcymq8xU486OtfXW+xS8oC68w0ROslYMB8kALIeQX4DoAwQAMRBpAgZMhNAvgfg-hz9ABmEDMDkAZDAH6BAvkqmFFOEubvHWgsHhnRgebuGgQd1HvS6Wpgwb9DpSGXgZKL5kIboSftgbmVVC9G9GbrRNwbbHQZEHQafsTjSHYCECGnvSfuGmDRGAABM6ACwwRCwIQGBCw6BeG2IYLIAAIbYUBRSnRppn0O9Di5HJgFHeBUz1HWpb6LJuG9Jhpdy9YuB+BFR+QEqsyzGMpxBT7iIcHsHtZmHRBWG2B2HDYnZdZ9Ukw+GBH8whGRGxGJGcwpGZHvpvQtGrVlGt429nKtQtGQA26LIZYnUZZDGpwuAnxLGnZDotoxAqAEn34SHZlbZHG+BnHXGJrinQlhKeGQB+HBHhHRHxHJHB5pHh4051GKmqpInkV2nsNF7os6zIJOmA0k0EMqEI5LHH5vRMmNH4nUiqHbYRAFmpgSmynjNln3G+QyGam6nfGGmAnmmYBWnflq8BttnumNElHwLFQ4mC8LJlmX0yHUnS5HrLGsAj6cnZm7n-Im6RBaHVnfRXH-m3szSdmfG-HGnAm0Jgnh5RMumQXYmLnsI4X1H8dbmBo0Te8zTnmCS7zLHv9RxPnxAtU2AgA) и проверить сложение в симуляторе.
+   Тот же текст схемы лежит в [sim/adder4.txt](sim/adder4.txt) (Файл → Импорт из текста).
+2. Собрать плату ввода-вывода и четыре платы разряда по [assembly.md](assembly.md)
+   и [wiring.md](wiring.md).
+3. Проверять разряды по одному, начиная с младшего, по таблице истинности из assembly.md.
