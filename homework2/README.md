@@ -32,8 +32,6 @@
 <img src="Results/test2_explained.jpg" width="32%"> <img src="Results/test9_explained.jpg" width="32%"> <img src="Results/test10_explained.jpg" width="32%">
 </p>
 
-![Тесты](Results/tests.jpg)
-
 | № | A | B | Cin | сумма | светодиоды Cout S3 S2 S1 S0 | фото |
 |---|---|---|---|---|---|---|
 | 1 | 0000 (0) | 0010 (2) | 0 | 2 | 0 0010 | [test1](Results/test1.jpg) |
@@ -54,6 +52,31 @@
   от B0 или от входного переноса Cin.
 - 1 + 1 + 1 = 3: в младшем разряде складываются все три входа, сумма 1 и перенос 1.
 - 15 + 15 + 1 = 31: максимум, перенос проходит через все 4 разряда, горят все 5 светодиодов.
+
+Фото каждого теста отдельно (нажмите, чтобы открыть в полном размере):
+
+<table>
+<tr>
+<td align="center"><b>Тест 1:</b> 0 + 2 = 2<br><a href="Results/test1.jpg"><img src="Results/test1.jpg" width="420"></a></td>
+<td align="center"><b>Тест 2:</b> 1 + 1 = 2<br><a href="Results/test2.jpg"><img src="Results/test2.jpg" width="420"></a></td>
+</tr>
+<tr>
+<td align="center"><b>Тест 3:</b> 8 + 2 = 10<br><a href="Results/test3.jpg"><img src="Results/test3.jpg" width="420"></a></td>
+<td align="center"><b>Тест 4:</b> 4 + 6 = 10<br><a href="Results/test4.jpg"><img src="Results/test4.jpg" width="420"></a></td>
+</tr>
+<tr>
+<td align="center"><b>Тест 5:</b> 8 + 10 = 18<br><a href="Results/test5.jpg"><img src="Results/test5.jpg" width="420"></a></td>
+<td align="center"><b>Тест 6:</b> 12 + 14 = 26<br><a href="Results/test6.jpg"><img src="Results/test6.jpg" width="420"></a></td>
+</tr>
+<tr>
+<td align="center"><b>Тест 7:</b> 12 + 15 = 27<br><a href="Results/test7.jpg"><img src="Results/test7.jpg" width="420"></a></td>
+<td align="center"><b>Тест 8:</b> 12 + 14 + 1 = 27<br><a href="Results/test8.jpg"><img src="Results/test8.jpg" width="420"></a></td>
+</tr>
+<tr>
+<td align="center"><b>Тест 9:</b> 1 + 1 + 1 = 3<br><a href="Results/test9.jpg"><img src="Results/test9.jpg" width="420"></a></td>
+<td align="center"><b>Тест 10:</b> 15 + 15 + 1 = 31<br><a href="Results/test10.jpg"><img src="Results/test10.jpg" width="420"></a></td>
+</tr>
+</table>
 
 ---
 
