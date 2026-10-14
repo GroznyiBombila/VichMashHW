@@ -89,15 +89,13 @@
 Плата ввода-вывода: сверху на этапе монтажа и снизу, готовая разводка.
 
 <p>
-<img src="Results/assembly/io_board_top.jpg" width="49%"> <img src="Results/assembly/io_board_bottom.jpg" width="49%">
+<img src="Results/assembly/io_board_top.jpg" height="420"> <img src="Results/assembly/io_board_bottom.jpg" height="420">
 </p>
 
 Плата разряда снизу: шина +5 В сверху, шина GND снизу, между ними перемычки
 между ячейками и провода к разъёму.
 
-<p>
-<img src="Results/assembly/bit_board_bottom.jpg" width="56%"> <img src="Results/assembly/bit_board_bottom_2.jpg" width="41%">
-</p>
+![Плата разряда снизу](Results/assembly/bit_board_bottom.jpg)
 
 Низ плат разряда и система в сборе, соединённая кабелями:
 
